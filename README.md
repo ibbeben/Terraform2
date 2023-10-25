@@ -1,3 +1,8 @@
+
+![image](https://github.com/ibbeben/Terraform2/assets/95633906/7f93b9e2-cafc-44ec-b5b6-d34838c476e6)
+
+
+
 # Azure resource group
 
 This template deploys a Linux virtual machine (VM) with infrastructure that includes a virtual network, subnet, public IP address, and more.
@@ -31,9 +36,5 @@ This template deploys a Linux virtual machine (VM) with infrastructure that incl
 
 To see how to run this example, see [Quickstart: Configure a Linux virtual machine in Azure using Terraform](https://learn.microsoft.com/azure/virtual-machines/linux/quick-create-terraform).
 
-
-
-
-![image](https://github.com/ibbeben/Terraform2/assets/95633906/7f93b9e2-cafc-44ec-b5b6-d34838c476e6)
 
 
