@@ -1,2 +1,2 @@
 # Depuis le navigateur:
-l'attaquant envoie un mail phishing avec un lien internet malveillant qui demande à l'utilisateur azure de se connecter et qui enregistre son login et son mdp, l'attaquant les récupere et les utilise pour se connecter à azure.
+l'attaquant envoie un mail phishing avec un lien internet malveillant qui demande à l'utilisateur azure de se connecter et qui enregistre son login et son mdp, l'attaquant les récupere et les utilise pour se connecter à azure et acceder à la ressource ( la machine vm par exemple) et ce depuis une autre adresse ip, ce qui déclenche une alerte d'incident vu que nous avons une regle pour l'initial access par rdp
