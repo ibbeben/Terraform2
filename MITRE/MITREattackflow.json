@@ -1,0 +1,110 @@
+{
+  "type": "bundle",
+  "id": "bundle--8a8d1a8a-5e73-4749-adc3-e78db1a2c6d1",
+  "spec_version": "2.1",
+  "created": "2023-10-25T08:32:15.647Z",
+  "modified": "2023-10-25T08:32:15.647Z",
+  "objects": [
+    {
+      "type": "extension-definition",
+      "id": "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4",
+      "spec_version": "2.1",
+      "created": "2022-08-02T19:34:35.143Z",
+      "modified": "2022-08-02T19:34:35.143Z",
+      "name": "Attack Flow",
+      "description": "Extends STIX 2.1 with features to create Attack Flows.",
+      "created_by_ref": "identity--fb9c968a-745b-4ade-9b25-c324172197f4",
+      "schema": "https://center-for-threat-informed-defense.github.io/attack-flow/stix/attack-flow-schema-2.0.0.json",
+      "version": "2.0.0",
+      "extension_types": [
+        "new-sdo"
+      ],
+      "external_references": [
+        {
+          "source_name": "Documentation",
+          "description": "Documentation for Attack Flow",
+          "url": "https://center-for-threat-informed-defense.github.io/attack-flow"
+        },
+        {
+          "source_name": "GitHub",
+          "description": "Source code repository for Attack Flow",
+          "url": "https://github.com/center-for-threat-informed-defense/attack-flow"
+        }
+      ]
+    },
+    {
+      "type": "identity",
+      "id": "identity--fb9c968a-745b-4ade-9b25-c324172197f4",
+      "spec_version": "2.1",
+      "created": "2022-08-02T19:34:35.143Z",
+      "modified": "2022-08-02T19:34:35.143Z",
+      "created_by_ref": "identity--fb9c968a-745b-4ade-9b25-c324172197f4",
+      "name": "MITRE Engenuity Center for Threat-Informed Defense",
+      "identity_class": "organization"
+    },
+    {
+      "type": "attack-flow",
+      "id": "attack-flow--93cb493f-5819-4387-aebc-9aa778fe848e",
+      "spec_version": "2.1",
+      "created": "2023-10-25T08:19:40.520Z",
+      "modified": "2023-10-25T08:32:15.648Z",
+      "extensions": {
+        "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
+          "extension_type": "new-sdo"
+        }
+      },
+      "created_by_ref": "identity--d5097852-8360-49d1-abbc-83890115ef09",
+      "start_refs": [
+        "attack-action--f25afa55-ebf4-41b2-be57-acfe396bc19e"
+      ],
+      "name": "MITREattackflow",
+      "scope": "incident"
+    },
+    {
+      "type": "identity",
+      "id": "identity--d5097852-8360-49d1-abbc-83890115ef09",
+      "spec_version": "2.1",
+      "created": "2023-10-25T08:32:15.647Z",
+      "modified": "2023-10-25T08:32:15.647Z",
+      "name": "e200500",
+      "identity_class": "individual"
+    },
+    {
+      "type": "attack-action",
+      "id": "attack-action--f25afa55-ebf4-41b2-be57-acfe396bc19e",
+      "spec_version": "2.1",
+      "created": "2023-10-25T08:32:15.648Z",
+      "modified": "2023-10-25T08:32:15.648Z",
+      "extensions": {
+        "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
+          "extension_type": "new-sdo"
+        }
+      },
+      "name": "Initial access",
+      "tactic_id": "TA0001",
+      "tactic_ref": "x-mitre-tactic--ffd5bcee-6e16-4dd2-8eca-7b3beedf33ca",
+      "description": "The attacker leverages a phishing email to trick a user into revealing their Azure credentials",
+      "confidence": 70,
+      "effect_refs": [
+        "attack-action--41e068f5-e183-48ac-b9c0-695c8bac1c60"
+      ]
+    },
+    {
+      "type": "attack-action",
+      "id": "attack-action--41e068f5-e183-48ac-b9c0-695c8bac1c60",
+      "spec_version": "2.1",
+      "created": "2023-10-25T08:32:15.648Z",
+      "modified": "2023-10-25T08:32:15.648Z",
+      "extensions": {
+        "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
+          "extension_type": "new-sdo"
+        }
+      },
+      "name": "Execution",
+      "tactic_id": "TA0002",
+      "tactic_ref": "x-mitre-tactic--4ca45d45-df4d-4613-8980-bac22d278fa5",
+      "description": "With the stolen credentials, the attacker gains access to the Azure environment",
+      "confidence": 70
+    }
+  ]
+}
